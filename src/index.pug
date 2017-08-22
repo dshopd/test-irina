@@ -1,0 +1,132 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+	head(lang="ru")
+		include pug/metatags.pug
+		+title('Julian test')
+		include pug/styles.pug
+	body
+		include pug/svg.pug
+		.wrap.site-container
+			.profile
+				.row
+					.medium-2.small-8.columns
+						.profile__avatar
+							img.profile__avatar_img(src="images/avatar.jpg")
+					.medium-6.small-8.columns
+						.profile__info
+							p.profile__info_text Юлиан
+							p.profile__info_text 11 мая 1988 года
+							p.profile__info_text Киев
+							p.profile__info_text
+								a(href="tel:+380638646100") +380638646100, 
+								a(href="mailto:888julian888@gmail.com")  888julian888@gmail.com, 
+								| skype:
+								a(href="skype:julian.ushanski") julian.ushanski 
+			.skills
+				.row
+					.medium-8.columns
+						h5.skills__titel Навыки 
+				.row
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| Html5
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| SASS
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox")
+								span.custom-checkbox
+									i.icon-check
+								| vANILLAJS
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| GIT
+				.row
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| css3
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| LESS
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox")
+								span.custom-checkbox
+									i.icon-check
+								| aNGULAR
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox")
+								span.custom-checkbox
+									i.icon-check
+								| fOUNDATION
+				.row
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| БЭМ
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| gULP
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| JQUERY
+					.medium-2.small-4.columns
+						.checkbox
+							label
+								input#html(type="checkbox" checked)
+								span.custom-checkbox
+									i.icon-check
+								| BOOTSTRAP
+
+			.level
+				.row
+					.medium-4.small-8.columns
+						.level__scale
+							#js-pos.level__scale_pos
+								img(src="images/scale-arrows.png")
+					.medium-4.small-8.columns
+						h5.level__titel Мой уровень владения 
+							br
+							| Java Script
+						.level__number
+							input#js-scale-number.level__number_value(type="text", value="450", min="0", max="1000", autofocus)
+		include pug/scripts.pug

@@ -1,0 +1,91 @@
+.profile
+	padding-top: 25px
+	// Оформления
+	border-bottom: 1px solid $color-border
+	&__avatar
+		// Блочная модель
+		border-radius: 50%
+		overflow: hidden
+		width: 145px
+		height: 145px
+		margin-bottom: 25px
+	&__info
+		position: relative
+		// для бекграунда
+		&:after
+			// Позиционирование
+			position: absolute
+			right: 5px
+			top: -54px
+			z-index: 100
+			content: ""
+			// Блочная модель
+			width: 184px
+			height: 166px
+			// Оформление
+			background: url('../images/approved.png') no-repeat center center
+			@media screen and(max-width: 414px)
+				display: none
+		&_text
+			// Позиционирование
+			position: relative
+			z-index: 1
+			// Блочная модель
+			padding-bottom: 5px
+			// Типографика
+			font-size: 12px
+			text-transform: uppercase
+			// Оформление
+			border-bottom: 2px solid #333333
+.skills
+	padding-top: 30px
+	border-bottom: 1px solid $color-border
+	&__titel
+		margin-bottom: 20px
+	.checkbox 
+		margin-bottom: 30px
+		label
+			text-transform: uppercase
+			letter-spacing: 1px
+
+.level
+	padding: 50px 0
+	&__scale
+		// Позиционирование
+		position: relative
+		// Блочная модель
+		width: 256px
+		height: 133px
+		// Оформление
+		background: url('../images/scale-bg.png') no-repeat left top
+		@media screen and(max-width: 640px)
+			margin: 0 auto 30px
+		&_pos
+			// Позиционирование
+			position: absolute
+			bottom: 0px
+			left: 50%
+			margin-left: -61px
+			// Блочная модель
+			width: 122px
+			height: 21px
+			// АНИМАЦИЯ
+			transition: transform 1s 
+	&__titel
+		margin-bottom: 20px
+		@media screen and(max-width: 640px)
+			text-align: center
+	&__number
+		&_value
+			// Оформление
+			border: none
+			background: none
+			box-shadow: none
+			outline: none
+			// Типографика
+			color: #0093d7
+			font-size: 50px
+			font-weight: 900
+			@media screen and(max-width: 640px)
+				text-align: center
+
